@@ -42,7 +42,7 @@ function calculate() {
             result = val1 * val2;
             break;
         case '/': 
-            if (val2 === 0) {
+            if (Math.abs(val2) < Number.EPSILON) {
                 alert("Can not divide 0");
                 return;
             }
@@ -61,4 +61,5 @@ function calculate() {
     newHistory.classList.add('latest');
     newHistory.innerHTML = `${val1} ${operator} ${val2} = ${result}`;
     history.appendChild(newHistory); 
+    newHistory.scrollIntoView({ behavior: 'smooth', block: 'end' });
 }

@@ -3,7 +3,7 @@ body {
     background-color: #f0f0f0;
 }
 .calculator {
-    background: rgb(170, 231, 170);
+    background: rgb(196, 241, 196);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -21,7 +21,7 @@ body {
     border: 2px dashed red;
     border-radius: 10px;
     font-size: 16px;
-    background-color: rgb(170, 231, 170);
+    background-color: rgb(196, 241, 196);
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     color: red;
     font-weight: bold;
@@ -46,14 +46,12 @@ button {
     border-color: white;
 }
 .history {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 200px;
+    overflow-y: auto; 
     text-align: left;
-    font-size: 16px;
-    margin-top: 5px;
-    padding: 0px 10px;
-    border: 0.5px dashed red;
-    border-radius:  10px;
-    color: red;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 .history .old {
     opacity: 50%;
