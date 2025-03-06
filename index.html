@@ -1,0 +1,29 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Какудятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="operator_numbers">
+            <input class="red_border" type="number" id="num1" placeholder="Вводить первое число">
+            <select class="red_border" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input class="red_border" type="number" id="num2" placeholder="Вводить второе число">
+        </div>
+        <div >
+            <button class="red_border" onclick="calculate()">Подсчитать</button>
+        </div>
+        <div class="history red_border" id="history"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

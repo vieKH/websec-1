@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    background-color: #f0f0f0;
+}
+.calculator {
+    background: rgb(170, 231, 170);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.operator_numbers{
+    display: flex;
+    flex-direction: row;
+}
+
+.red_border {
+    border: 2px dashed red;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(170, 231, 170);
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: red;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px;
+
+}
+input{
+    width: 35%;
+}
+select{
+    width: 15%;
+}
+button {
+    width: 40%;
+    
+}
+.error {
+    border-color: white;
+}
+.history {
+    text-align: left;
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 0px 10px;
+    border: 0.5px dashed red;
+    border-radius:  10px;
+    color: red;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.history .old {
+    opacity: 50%;
+}
+.history .latest {
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        width: 100%;
+        flex-direction: column;
+        padding: 30px 0;
+        
+    }
+
+    .operator_numbers{
+        flex-direction: column;
+    }
+
+    input {
+        width: 70%;
+        text-align: center;
+        margin: 10px 60px;
+    }
+
+    select {
+        margin: auto;
+    }
+
+}
